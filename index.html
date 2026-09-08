@@ -238,16 +238,22 @@
   .btn{
     display: inline-flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.5rem;
     padding: 0.55rem 1.6rem 0.55rem 0.55rem;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.05rem;
+    line-height: 1;
     border: 1.5px solid transparent;
     position: relative;
     isolation: isolate;
     transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-label, .btn .num{
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
   }
   .btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   .btn-icon{
@@ -287,7 +293,7 @@
   }
   .btn-outline .btn-icon{ background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
   .btn-outline:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 22px var(--shadow); }
-  .btn .num{ font-family: "Space Mono", monospace; letter-spacing: 0.01em; }
+  .btn .num{ font-family: "Space Mono", monospace; letter-spacing: 0.01em; position: relative; top: 0.5px; }
 
   /* ---------- Hero ---------- */
   .hero{
@@ -622,8 +628,8 @@
       <h1>Strong, Healthy Seed for a <em>Good Crop</em></h1>
       <p class="hero-sub">భాగ్యశ్రీ ఆక్వా హేచరీ (BSA) మా సొంత హేచరీలో నిజమైన వనామీ రొయ్యల సీడ్‌ను పెంచుతాము. తల్లి రొయ్య నుండి చివరి PL సీడ్ వరకు ప్రతి దశలో మేమే జాగ్రత్త తీసుకుంటాము &mdash; కాబట్టి మీరు కొనే సీడ్ బలంగా, ఆరోగ్యంగా ఉండి మీ చెరువులో బాగా పెరుగుతుంది.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="tel:+919640091802"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span> Call <span class="num">9640091802</span></a>
-        <a class="btn btn-outline" href="tel:+919550725602"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span> Call <span class="num">9550725602</span></a>
+        <a class="btn btn-primary" href="tel:+919640091802"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span><span class="btn-label">Call</span> <span class="num">9640091802</span></a>
+        <a class="btn btn-outline" href="tel:+919550725602"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span><span class="btn-label">Call</span> <span class="num">9550725602</span></a>
       </div>
       <div class="trust-strip">
         <div><strong>Our Own Hatchery</strong>మొదటి నుండి చివరి వరకు అన్నీ ఇక్కడే</div>
@@ -842,8 +848,8 @@
           <p>సీడ్ త్వరగా అమ్ముడవుతుంది. ఏది సిద్ధంగా ఉంది, ఏ వయసు ఉంది అని తెలుసుకోవడానికి, మీరు చెరువులో వేసే తేదీ నిర్ణయించే ముందు మాకు కాల్ చేయండి.</p>
         </div>
         <div class="contact-numbers">
-          <a class="btn btn-primary" href="tel:+919640091802"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span> Call <span class="num">9640091802</span></a>
-          <a class="btn btn-outline" href="tel:+919550725602"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span> Call <span class="num">9550725602</span></a>
+          <a class="btn btn-primary" href="tel:+919640091802"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span><span class="btn-label">Call</span> <span class="num">9640091802</span></a>
+          <a class="btn btn-outline" href="tel:+919550725602"><span class="btn-icon"><svg class="icon"><use href="#icon-phone"></use></svg></span><span class="btn-label">Call</span> <span class="num">9550725602</span></a>
         </div>
       </div>
     </div>
