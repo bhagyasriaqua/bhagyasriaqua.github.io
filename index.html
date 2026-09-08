@@ -254,6 +254,7 @@
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    font-family: "Space Mono", monospace;
   }
   .btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
   .btn-icon{
@@ -293,7 +294,7 @@
   }
   .btn-outline .btn-icon{ background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
   .btn-outline:hover{ border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: 0 10px 22px var(--shadow); }
-  .btn .num{ font-family: "Space Mono", monospace; letter-spacing: 0.01em; position: relative; top: 0.5px; }
+  .btn .num{ letter-spacing: 0.01em; }
 
   /* ---------- Hero ---------- */
   .hero{
@@ -330,7 +331,7 @@
     max-width: 56ch;
     margin-bottom: 1.9rem;
   }
-  .hero-ctas{ display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2.6rem; }
+  .hero-ctas{ display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; margin-bottom: 2.6rem; }
 
   .trust-strip{
     display: grid;
