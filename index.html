@@ -28,10 +28,13 @@
   "telephone": ["+919640091802", "+919550725602"],
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Tuni",
+    "streetAddress": "Yellayyapeta, Thondangi Mandal",
+    "addressLocality": "Kakinada",
     "addressRegion": "Andhra Pradesh",
+    "postalCode": "533408",
     "addressCountry": "IN"
   },
+  "hasMap": "https://maps.app.goo.gl/VQruiCYFn3myukM6A",
   "areaServed": "Andhra Pradesh, India",
   "priceRange": "$$"
 }
@@ -465,6 +468,9 @@
   .footer-brand{ display: flex; align-items: center; gap: 0.6rem; }
   .footer-brand .name{ font-family: "Fraunces", serif; font-weight: 700; }
   footer .tag{ color: var(--ink-dim); font-size: 0.85rem; margin-top: 0.4rem; max-width: 32ch; }
+  footer .footer-address{ color: var(--ink-dim); font-size: 0.85rem; margin-top: 0.6rem; display: flex; align-items: flex-start; gap: 0.4rem; max-width: 34ch; }
+  footer .footer-address svg{ flex-shrink: 0; margin-top: 0.15rem; color: var(--accent); }
+  footer .footer-address a{ color: var(--accent); text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
   .footer-calls{ display: flex; gap: 1.2rem; flex-wrap: wrap; }
   .footer-calls a{ text-decoration: none; font-family: "Space Mono", monospace; color: var(--ink); font-weight: 700; }
   .footer-fine{ margin-top: 2rem; color: var(--ink-dim); font-size: 0.78rem; border-top: 1px solid var(--border); padding-top: 1.2rem; }
@@ -542,6 +548,10 @@
       <path d="M2.5 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
       <path d="M2.5 19.6c2-2 4-2 6 0s4 2 6 0 4-2 6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
       <circle cx="17.5" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M12 21.5s7-6.7 7-12.3a7 7 0 0 0-14 0c0 5.6 7 12.3 7 12.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <circle cx="12" cy="9.2" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/>
     </symbol>
     <symbol id="icon-arrow-down" viewBox="0 0 24 24">
       <path d="M12 4v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -822,6 +832,10 @@
           <span class="name">Bhagya Sri Aqua Hatchery (BSA)</span>
         </div>
         <p class="tag">Tuni Coast, ఆంధ్రప్రదేశ్‌లోని రైతుల కోసం, మా సొంత హేచరీలో పెంచిన ఆరోగ్యకరమైన వనామీ రొయ్యల సీడ్.</p>
+        <p class="footer-address">
+          <svg class="icon"><use href="#icon-pin"></use></svg>
+          <span>Yellayyapeta, Thondangi Mandal, Kakinada, Andhra Pradesh 533408 &middot; <a href="https://maps.app.goo.gl/VQruiCYFn3myukM6A?g_st=ac" target="_blank" rel="noopener">View on Map</a></span>
+        </p>
       </div>
       <div class="footer-calls">
         <a href="tel:+919640091802">9640091802</a>
